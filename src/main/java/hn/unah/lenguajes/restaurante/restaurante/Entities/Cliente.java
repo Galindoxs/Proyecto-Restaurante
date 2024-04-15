@@ -18,7 +18,7 @@ public class Cliente {
     @Column(name = "idcliente")
     private long idcliente; 
 
-    private String name;
+    private String nombre;
 
     private String apellido;
 

@@ -1,6 +1,7 @@
 package hn.unah.lenguajes.restaurante.restaurante.Entities;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -24,5 +25,5 @@ public class Factura {
     private LocalDate fechaemision;
 
     @OneToMany(mappedBy = "factura")
-    private Orden orden;
+    private List<Orden> orden;
 }

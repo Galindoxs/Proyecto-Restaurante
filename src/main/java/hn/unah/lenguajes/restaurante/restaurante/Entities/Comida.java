@@ -1,5 +1,7 @@
 package hn.unah.lenguajes.restaurante.restaurante.Entities;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -29,5 +31,5 @@ public class Comida {
     private Orden orden;
 
     @OneToMany(mappedBy = "comida")
-    private Inventario inventario;
+    private List<Inventario> inventario;
 }

@@ -24,7 +24,7 @@ public class Inventario {
     @Column(name = "categoriaproducto")
     private String categoriaproducto;
 
-    @Column(name = "cantidadproducto")
+    @Column(name = "cantidaddisponible")
     private long cantidaddisponible;
 
     @Column(name = "unidadmedida")

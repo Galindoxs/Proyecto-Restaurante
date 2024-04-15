@@ -1,5 +1,7 @@
 package hn.unah.lenguajes.restaurante.restaurante.Entities;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -25,5 +27,5 @@ public class Proveedor {
     private String email;
 
     @OneToMany(mappedBy = "proveedor")
-    private Inventario inventario;
+    private List<Inventario> inventario;
 }
