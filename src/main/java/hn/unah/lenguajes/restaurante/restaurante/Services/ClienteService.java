@@ -4,6 +4,6 @@ import hn.unah.lenguajes.restaurante.restaurante.Entities.Cliente;
 
 public interface ClienteService {
     
-    public String crearCliente(Cliente cliente);
+    public Cliente crearCliente(Cliente cliente);
     
 }
