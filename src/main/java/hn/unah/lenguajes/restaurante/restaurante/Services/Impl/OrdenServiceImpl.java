@@ -20,6 +20,7 @@ public class OrdenServiceImpl implements OrdenService{
         return ordenRepository.save(orden); 
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public List<Orden> buscarPorCliente(long idcliente) {
         return (List<Orden>) ordenRepository.findById(idcliente).get();
