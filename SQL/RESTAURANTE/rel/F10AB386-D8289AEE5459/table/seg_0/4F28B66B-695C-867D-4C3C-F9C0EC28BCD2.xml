@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F28B66B-695C-867D-4C3C-F9C0EC28BCD2" name="TBL_INVENTARIO">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:44:33 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PRODUCTO" id="B79CCD8E-D560-69E9-886E-1877BEDD71E6">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:48:44 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROVEEDOR" id="66923D83-A024-DB69-D79C-3F475EBFAE06">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:04:28 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4F81337-D4E1-7286-F235-C001D692F272" referredColumn="FEB93E74-7B80-4E9D-16D7-3A30C0205B06"/>
+</associations>
+</Column>
+<Column name="ID_COMIDA" id="CC837D5C-CA59-F3A4-0EC7-A8461385A8AB">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:22:59 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3836DE4-8D2B-93EA-816D-A35F13DB03D5" referredColumn="C102AB7D-7FBA-08B8-2CAF-952B9ED79EDC"/>
+</associations>
+</Column>
+<Column name="NOMBRE_PRODUCTO" id="A36D1B4D-E2CF-BA70-559F-296197F89F15">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:48:44 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORIA_PRODUCTO" id="F943F1D2-D127-CE6A-5626-40C7A8D4D65A">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:48:44 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_DISPONIBLE" id="5034D549-DB95-DB34-37E4-FDABC9EC2CAB">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:48:44 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIDAD_MEDIDA" id="FF75E5FB-FCD4-2BA8-FC60-2C49905D5BC8">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:54:35 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CADUCIDAD" id="9129D0C4-1EC9-9DF3-F7BC-23EBD42A2ED2">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:54:35 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO_UNIDAD" id="28A655FF-D0C0-F68E-26BE-D34A9B8AEA76">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:54:35 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6FC9DC1-E0E4-43B5-05E7-0ED41822B75A" name="TBL_INVENTARIO_PK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 04:48:44 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B79CCD8E-D560-69E9-886E-1877BEDD71E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F0AF92A-C690-722B-ADF0-FC3C4EBEA8FF" name="INVENTARIO_TBL_PROVEEDORES_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:04:27 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66923D83-A024-DB69-D79C-3F475EBFAE06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3554D8FA-35E0-00A4-E363-A9856FA404FB" name="INVENTARIO_TBL_COMIDAS_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:22:59 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC837D5C-CA59-F3A4-0EC7-A8461385A8AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

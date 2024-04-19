@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="RESTAURANTE" id="18C024AC-DC34-588C-302F-C5BDB9B9AA38" version="3.5">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 03:43:12 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>18C024AC-DC34-588C-302F-C5BDB9B9AA38</designId>
+</OSDM_Design>

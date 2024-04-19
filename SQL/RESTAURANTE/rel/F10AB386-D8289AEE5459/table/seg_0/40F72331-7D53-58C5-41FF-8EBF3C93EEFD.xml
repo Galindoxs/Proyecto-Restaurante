@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40F72331-7D53-58C5-41FF-8EBF3C93EEFD" name="TBL_ORDENES">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:08:57 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ORDEN" id="29C6AB0C-00E7-A69B-550F-04B490487D12">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:13:25 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLIENTE" id="0272FB09-15C1-0B44-9012-0AF19D800C14">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:13:37 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A12390CE-CE9E-1162-8DB8-5A91092524DB" referredColumn="F37345E1-B17A-5655-4B04-A978C9C2B479"/>
+</associations>
+</Column>
+<Column name="FECHA_ORDEN" id="89ACCC22-B04B-C3FE-BD9D-1866935E5F64">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:13:25 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_FACTURAS_ID_FACTURAS" id="5A3E5276-B0BD-056C-5BF0-3DA5611989AD">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 06:05:41 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEA2E074-44E4-57B5-89E9-6B4E75C3BBCB" referredColumn="F7C99EEE-B7B6-F32F-AE81-79A3530CC98E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFD109F0-9FB0-A05C-1837-D945A29B5E50" name="TBL_ORDENES_PK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:12:56 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29C6AB0C-00E7-A69B-550F-04B490487D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7744A205-8EE7-64BA-7B96-CF71DD05CBC3" name="TBL_ORDENES_TBL_CLIENTES_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 05:13:37 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0272FB09-15C1-0B44-9012-0AF19D800C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94191232-8604-5A96-516E-083E31C5B5CD" name="TBL_ORDENES_TBL_FACTURAS_FK">
+<createdBy>Lalos</createdBy>
+<createdTime>2024-04-10 06:05:41 UTC</createdTime>
+<ownerDesignName>RESTAURANTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A3E5276-B0BD-056C-5BF0-3DA5611989AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

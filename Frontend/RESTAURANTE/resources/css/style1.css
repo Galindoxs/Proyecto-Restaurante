@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilos personalizados para el Header/Navbar*/
+.custom-navbar {
+    background-color: #006994; /* Cambia el color de fondo de la barra de navegación */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #ffffff; /* Cambia el color del texto de los enlaces */
+}
+
+/*Estilos personalizados para el carousel*/
+.carousel-inner img {
+    max-width: 100%; /* Establece un ancho máximo para las imágenes */
+    height: 550px; /* Permite que la altura se ajuste automáticamente */
+    object-fit: cover;
+}
+
+/*Estilos personalizados para las cards*/
+.custom-card {
+    background-color: #efe4da  ; /* Cambia el color de fondo de las cards */
+}
+
+.custom-card-2{
+    background-color: #ccebfa;
+}
+
+/* Estilos personalizados para el footer */
+.footer {
+    background-color:#006994; /* Color de fondo del footer */
+    color: #ffffff; /* Color del texto del footer */
+    padding: 10px 20px; /* Espaciado interno del footer */
+}
+
+.footer-logo {
+    width: 100px; /* Ancho máximo del logo */
+    height: auto; /* Altura ajustable */
+}
+
+
+/* Cambia el color de fondo de los íconos a blanco */
+.btn-twitter, .btn-facebook, .btn-instagram {
+    background-color: #ffffff;
+    color: #4682B4; /* Cambia el color del texto a azul */
+    margin-right: 10px; /* Agrega margen a la derecha de los íconos */
+}
