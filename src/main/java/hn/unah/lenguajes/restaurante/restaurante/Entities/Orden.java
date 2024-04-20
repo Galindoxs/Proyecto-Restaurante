@@ -1,7 +1,7 @@
 package hn.unah.lenguajes.restaurante.restaurante.Entities;
 
-import java.time.LocalDate;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -20,17 +20,10 @@ public class Orden {
     @Column(name = "idorden")
     private long idorden;
 
-    @Column(name = "fechaorden")
-    private LocalDate fechaorden;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "idcomida")
+   private Comida comida;
 
-    @ManyToOne
-    @JoinColumn(name = "idcliente", referencedColumnName = "idcliente")
-    private Cliente cliente;
-
-    @ManyToOne
-    @JoinColumn(name = "idfacturas", referencedColumnName = "idfacturas")
-    private Factura factura;
-
-    @OneToOne(mappedBy = "orden")
-    private Comida comida;
+   @ManyToOne()
+   private Factura factura;
 }

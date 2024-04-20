@@ -2,10 +2,15 @@ package hn.unah.lenguajes.restaurante.restaurante.Entities;
 
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -15,17 +20,15 @@ import lombok.Data;
 public class Proveedor {
     
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idproveedor")
     private long idproveedor;
 
-    private String nombre;
+    @Column(name = "nombreproveedor")
+    private String nombreproveedor;
 
-    private String direccion;
-    
-    private long telefono;
-
-    private String email;
-
-    @OneToMany(mappedBy = "proveedor")
-    private List<Inventario> inventario;
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "ingrediente_proveedor", joinColumns = @JoinColumn(name = "idproveedor"),
+    inverseJoinColumns = @JoinColumn(name = "idingrediente"))
+    private List<Ingrediente> ingrediente;
 }

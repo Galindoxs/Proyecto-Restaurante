@@ -17,5 +17,10 @@ public class ClienteServiceImpl implements ClienteService{
     public Cliente crearCliente(Cliente cliente) {
         return clienteRepository.save(cliente);    
     }
+
+    @Override
+    public Cliente buscarClientePorCorreo(String correo) {
+       return null;
+    }
     
 }

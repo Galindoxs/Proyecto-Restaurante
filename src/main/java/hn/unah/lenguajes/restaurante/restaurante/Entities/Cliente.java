@@ -1,11 +1,13 @@
 package hn.unah.lenguajes.restaurante.restaurante.Entities;
 
-import java.util.List;
-
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -15,20 +17,17 @@ import lombok.Data;
 public class Cliente {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idcliente")
     private long idcliente; 
 
-    private String nombre;
+    @Column(name = "nombrecliente")
+    private String nombrecliente;
 
-    private String apellido;
-
-    private long identidad;
-
-    private String correo;
-
-    private long telefono;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "idusuario")
+    private Usuario usuario;
     
-    @OneToMany(mappedBy = "cliente")
-    private List<Orden> orden;
-    
+    @OneToOne(mappedBy = "cliente")
+    private Factura factura;
 }

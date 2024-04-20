@@ -1,7 +1,7 @@
 package hn.unah.lenguajes.restaurante.restaurante.Services;
 
 import hn.unah.lenguajes.restaurante.restaurante.Entities.Comida;
-import hn.unah.lenguajes.restaurante.restaurante.Entities.Inventario;
+import hn.unah.lenguajes.restaurante.restaurante.Entities.Ingrediente;
 
 public interface ComidaService {
     
@@ -11,5 +11,5 @@ public interface ComidaService {
 
     public Comida eliminarComida(String idComida);
 
-    public Inventario asignarAInventario(String idproducto, String idComida);
+    public Ingrediente asignarAInventario(String idproducto, String idComida);
 }

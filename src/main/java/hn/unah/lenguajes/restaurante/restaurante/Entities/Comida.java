@@ -2,11 +2,13 @@ package hn.unah.lenguajes.restaurante.restaurante.Entities;
 
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -20,16 +22,21 @@ public class Comida {
     @Column(name = "idcomida")
     private String idcomida;
 
-    @Column(name = "nombrecomida")
     private String nombre;
 
-    @Column(name = "tipocomida")
-    private String tipocomida;
+    private double precio;
 
-    @OneToOne
-    @JoinColumn(name = "idorden", referencedColumnName = "idorden")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "idtipo")
+    private TipoComida tipoComida;
+
+    //Relaciones
+
+    @OneToOne(mappedBy = "comida")
     private Orden orden;
 
-    @OneToMany(mappedBy = "comida")
-    private List<Inventario> inventario;
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "comida_ingrediente", joinColumns = @JoinColumn(name = "idcomida"),
+    inverseJoinColumns = @JoinColumn(name = "idingrediente"))
+    private List<Ingrediente> ingrediente;
 }
