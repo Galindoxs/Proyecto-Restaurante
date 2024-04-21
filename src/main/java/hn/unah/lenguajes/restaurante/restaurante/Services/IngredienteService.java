@@ -6,7 +6,7 @@ public interface IngredienteService {
     
     public Ingrediente crearInventario(Ingrediente inventario);
 
-    public Ingrediente buscarInventario(String idProducto);
+    public Ingrediente buscarInventario(long idProducto);
 
     
 }

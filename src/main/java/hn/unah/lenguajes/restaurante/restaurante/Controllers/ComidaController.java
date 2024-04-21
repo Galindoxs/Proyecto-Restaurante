@@ -28,12 +28,12 @@ public class ComidaController {
     }
     
     @GetMapping("/comida/buscar")
-    public Comida buscarComida(@RequestParam String idComida) {
+    public Comida buscarComida(@RequestParam long idComida) {
         return comidaServiceImpl.buscarComida(idComida);
     }
 
     @DeleteMapping("/comida/eliminar")
-    public Comida eliminarComida(@RequestParam String idComida) {
+    public Comida eliminarComida(@RequestParam long idComida) {
         return comidaServiceImpl.eliminarComida(idComida);
     }
     

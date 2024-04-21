@@ -19,7 +19,7 @@ public class IngredienteServiceImpl implements IngredienteService{
     }
 
     @Override
-    public Ingrediente buscarInventario(String idProducto) {
+    public Ingrediente buscarInventario(long idProducto) {
        return ingredienteRepository.findById(idProducto).get();
     }
     

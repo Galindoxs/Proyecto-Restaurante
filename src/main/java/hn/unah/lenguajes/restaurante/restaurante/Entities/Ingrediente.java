@@ -3,6 +3,9 @@ package hn.unah.lenguajes.restaurante.restaurante.Entities;
 import java.time.LocalDate;
 import java.util.List;
 
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -17,7 +20,7 @@ public class Ingrediente {
     
     @Id
     @Column(name = "idingrediente")
-    private String idingrediente;
+    private long idingrediente;
     
     @Column(name = "nombreingrediente")
     private String nombreingrediente;
@@ -29,7 +32,6 @@ public class Ingrediente {
     @Column(name = "fechacaducidad")
     private LocalDate fechacaducidad;
 
-    
     @ManyToMany(mappedBy = "ingrediente")
     private List<Proveedor> proveedor;
 

@@ -7,9 +7,9 @@ public interface ComidaService {
     
     public Comida crearComida(Comida comida);
 
-    public Comida buscarComida(String idComida);
+    public Comida buscarComida(long idComida);
 
-    public Comida eliminarComida(String idComida);
+    public Comida eliminarComida(long idComida);
 
-    public Ingrediente asignarAInventario(String idproducto, String idComida);
+    public Ingrediente asignarAInventario(long idingrediente, long idComida);
 }

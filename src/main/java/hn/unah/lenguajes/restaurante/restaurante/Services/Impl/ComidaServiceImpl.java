@@ -24,18 +24,18 @@ public class ComidaServiceImpl implements ComidaService{
     }
 
     @Override
-    public Comida buscarComida(String idComida) {
+    public Comida buscarComida(long idComida) {
        Comida comida = comidaRepository.findById(idComida).get();
        return comida;
     }
 
     @Override
-    public Comida eliminarComida(String idComida) {
+    public Comida eliminarComida(long idComida) {
         return comidaRepository.findById(idComida).get();
     }
 
     @Override
-    public Ingrediente asignarAInventario(String idproducto, String idComida) {
+    public Ingrediente asignarAInventario(long idproducto, long idComida) {
         if(comidaRepository.existsById(idComida) && inventarioRepository.existsById(idproducto)){
 
             //Averiguar A quien va qué

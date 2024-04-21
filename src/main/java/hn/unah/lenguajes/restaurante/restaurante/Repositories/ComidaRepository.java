@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import hn.unah.lenguajes.restaurante.restaurante.Entities.Comida;
 
-public interface ComidaRepository extends CrudRepository<Comida, String>{
+public interface ComidaRepository extends CrudRepository<Comida, Long>{
     
 }

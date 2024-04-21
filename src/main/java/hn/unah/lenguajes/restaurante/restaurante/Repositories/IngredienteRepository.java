@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import hn.unah.lenguajes.restaurante.restaurante.Entities.Ingrediente;
 
-public interface IngredienteRepository extends CrudRepository<Ingrediente, String>{
+public interface IngredienteRepository extends CrudRepository<Ingrediente, Long>{
     
 }

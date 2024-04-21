@@ -20,7 +20,7 @@ public class Comida {
     
     @Id
     @Column(name = "idcomida")
-    private String idcomida;
+    private long idcomida;
 
     private String nombre;
 
